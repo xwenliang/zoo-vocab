@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 240px;
+	height: 200px;
+	position: relative;
+}
+input,
+button,
+.msg,
+.tit{
+	display: block;
+	width: 80%;
+	box-sizing: border-box;
+	margin: 20px auto;
+	padding: 5px 2px;
+	border-radius: 4px;
+	line-height: 16px;
+}
+input,
+button{
+	outline: medium;
+	border: 1px solid #ddd;
+	background: #efefef;
+}
+button{
+	background: #55b131;
+	color: #fff;
+	cursor: pointer;
+	border-color: #469129;
+}
+.hide{
+	display: none;
+}
+.msg{
+	transition: opacity .2s linear;
+}
+.tit{
+	font-size: 14px;
+	color: #469129;
+}
+.bg{
+	position: absolute;
+	top: -10%;
+	left: -10%;
+	width: 120%;
+	height: 120%;
+	background-image: url('./icon.png');
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.1;
+	z-index: -1;
+	-webkit-blur: filter(3px);
+}
+.login-box input,
+.login-box button{
+	margin: 10px auto;
+}
+

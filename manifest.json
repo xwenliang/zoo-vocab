@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "ZooVocab",
+	"version": "0.0.1",
+	"description": "Extend Youdao dict to tudy english",
+	"permissions": [
+		"tabs",
+		"http://*/*",
+		"https://*/*"
+	],
+	"background": {
+		"scripts": [
+			"lib/jquery-1.12.1.js", 
+			"lib/md5.js",
+			"background/background.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["content/content.js"],
+			"run_at": "document_start",
+			"all_frames": true
+		}
+	],
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "ZooVocab",
+		"default_popup": "popup.html"
+	}
+}

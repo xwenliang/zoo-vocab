@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zoo-vocab</title>
+	<link rel="stylesheet" type="text/css" href="./popup.css">
+</head>
+<body>
+
+	<div class="tit">将生词添加到我的有道单词本</div>
+	<div class="login-box hide">
+		<div class="username"><input type="text" id="username" placeholder="请输入用户名" autofocus="true"></div>
+		<div class="password"><input type="password" id="password" placeholder="请输入密码"></div>
+		<div class="login-btn"><button id="login">登录</button></div>
+	</div>
+
+	<div class="add-box hide">
+		<div class="vocab"><input id="vocab" type="text" placeholder="请输入想添加的单词" autofocus="true"></div>
+		<div class="save-btn"><button id="save">添加</button></div>
+	</div>
+
+	<div class="msg" id="msg"></div>
+
+	<div class="bg"></div>
+
+<script src="./lib/jquery-1.12.1.js"></script>
+<script src="./lib/util.js"></script>
+<script src="./lib/md5.js"></script>
+<script src="./popup.js"></script>
+</body>
+</html>
